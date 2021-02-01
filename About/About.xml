@@ -7,7 +7,7 @@
 	<supportedVersions>
 		<li>1.2</li>
 	</supportedVersions>
-	<description></description>
+	<description>Beat Your Prisoners lets you... well, beat the hell out of your prisoners. You can use this to speed up recruitment time, or purely for amusement.</description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
