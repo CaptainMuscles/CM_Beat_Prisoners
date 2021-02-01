@@ -26,7 +26,7 @@ namespace CM_Beat_Prisoners
         private const float baseFightBackChance = 0.05f;
         private const float fightBackChanceMeleeFactor = 0.02f;
 
-        private const float basePrisonBreakChance = 0.50f;
+        private const float basePrisonBreakChance = 0.25f;
 
         private static List<Pair<string, float>> fightBackTraitFactors = new List<Pair<string, float>> { new Pair<string, float> ("Wimp", 0.5f),
                                                                                                          new Pair<string, float> ("Kind", 0.5f),
