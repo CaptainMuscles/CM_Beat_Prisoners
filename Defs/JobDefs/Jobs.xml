@@ -7,7 +7,7 @@
     <reportString>breaking TargetA.</reportString>
     <casualInterruptible>false</casualInterruptible>
 	<checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
-    <neverShowWeapon>true</neverShowWeapon>
+    <!--<neverShowWeapon>true</neverShowWeapon>-->
   </JobDef>
   
   <JobDef>
