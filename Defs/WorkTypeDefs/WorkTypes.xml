@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>CM_Beat_Prisoners_WorkType_Break_Resistance</defName>
+    <labelShort>Break</labelShort>
+    <pawnLabel>Breaker</pawnLabel>
+    <gerundLabel>breaking</gerundLabel>
+    <description>Break prisoner resistance.</description>
+    <verb>Break</verb>
+    <naturalPriority>1099</naturalPriority>
+    <requireCapableColonist>true</requireCapableColonist>
+    <relevantSkills>
+	  <li>Melee</li>
+      <li>Social</li>
+    </relevantSkills>
+    <workTags>
+	  <li>Violent</li>
+      <li>Social</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

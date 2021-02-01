@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM_Beat_Prisoners", "CM_Beat_Prisoners.csproj", "{70564678-0535-4C73-8DCC-27C7AD4F8B21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70564678-0535-4C73-8DCC-27C7AD4F8B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70564678-0535-4C73-8DCC-27C7AD4F8B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70564678-0535-4C73-8DCC-27C7AD4F8B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70564678-0535-4C73-8DCC-27C7AD4F8B21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66F83CC4-374F-46C3-B86D-B2BD325E17CB}
+	EndGlobalSection
+EndGlobal

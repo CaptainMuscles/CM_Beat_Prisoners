@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+  <JobDef>
+    <defName>CM_Beat_Prisoners_Job_Break_Resistance</defName>
+    <driverClass>CM_Beat_Prisoners.JobDriver_Break</driverClass>
+    <reportString>breaking TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+	<checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
+    <neverShowWeapon>true</neverShowWeapon>
+  </JobDef>
+  
+  <JobDef>
+    <defName>CM_Beat_Prisoners_Job_Cower</defName>
+    <driverClass>CM_Beat_Prisoners.JobDriver_Cower</driverClass>
+    <reportString>cowering.</reportString>
+	<casualInterruptible>false</casualInterruptible>
+    <checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
+    <isIdle>true</isIdle>
+  </JobDef>
+
+</Defs>

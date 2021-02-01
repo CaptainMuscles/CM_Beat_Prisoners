@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <InteractionDef>
+    <defName>CM_Beat_Prisoners_Interaction_Prisoner_Threatened</defName>
+    <label>try to break</label>
+	<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/Insult</symbol>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>15</initiatorXpGainAmount>
+    <recipientThought>CM_Beat_Prisoners_Thought_Enmity_Built</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+	    <li>r_logentry->[INITIATOR_nameDef] [toldastoryabout] [subject] to [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] about [subject].</li>
+        <li>r_logentry->[INITIATOR_nameDef] described [subject] to [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] encouraged [RECIPIENT_nameDef] to [talkabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] offered a chance for [RECIPIENT_nameDef] to [talkabout] [subject].</li>
+		
+		<li>r_logentry->[INITIATOR_nameDef] expressed interest in taking away [RECIPIENT_nameDef]'s [PersonalCharacteristic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] how [RECIPIENT_pronoun] would feel about living life without [RECIPIENT_possessive] [PersonalCharacteristic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] made [RECIPIENT_nameDef] an offer [RECIPIENT_pronoun] couldn't refuse.</li>
+        <li>r_logentry->[INITIATOR_nameDef] offered [RECIPIENT_nameDef] [offer].</li>
+		<li>r_logentry->[INITIATOR_nameDef] threatened to tear [RECIPIENT_nameDef] a new [orifice]-hole.</li>
+		
+		<li>toldastoryabout(p=2)->told a story about</li>
+        <li>toldastoryabout->told a funny story about</li>
+        <li>toldastoryabout->told a heartfelt story about</li>
+        <li>toldastoryabout->told an old story about</li>
+        <li>toldastoryabout->told a family story about</li>
+        <li>toldastoryabout->told a childhood story about</li>
+        <li>toldastoryabout->mentioned an anecdote about</li>
+		
+		<li>talkabout->talk about</li>
+        <li>talkabout->discuss</li>
+        <li>talkabout->have a discussion about</li>
+        <li>talkabout->ask about</li>
+        <li>talkabout->think about</li>
+        <li>talkabout->find common ground around</li>
+		
+		<li>subject->breaking legs</li>
+        <li>subject->cutting off fingers</li>
+        <li>subject->sleeping with the fishes</li>
+		<li>subject(p=4)->[ConceptBadass]</li>
+		<li>subject(p=2)->[ConceptAngsty]</li>
+		
+		<li>offer->a knuckle sandwich</li>
+		
+		<li>orifice->ass</li>
+		<li>orifice->mouth</li>
+		<li>orifice->ear</li>
+		<li>orifice->nose</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>CM_Beat_Prisoners_Interaction_Prisoner_Beating_Conclusion</defName>
+    <label>recruit attempt</label>
+	<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/Insult</symbol>
+    <workerClass>CM_Beat_Prisoners.InteractionWorker_BreakAttempt</workerClass>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>60</initiatorXpGainAmount>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] promised more [goodthing] to [RECIPIENT_nameDef] unless [RECIPIENT_pronoun] joined.</li>
+
+        <li>goodthing(p=15)->[ConceptBadass]</li>
+		<li>goodthing(p=5)->[ConceptAngsty]</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

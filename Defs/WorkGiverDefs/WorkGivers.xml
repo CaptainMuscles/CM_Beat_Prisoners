@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ============= Break ============= -->
+
+  <WorkGiverDef>
+    <defName>CM_Beat_Prisoners_WorkGiver_Break_Resistance</defName>
+    <label>execute prisoners</label>
+    <giverClass>CM_Beat_Prisoners.WorkGiver_Warden_Break</giverClass>
+    <workType>CM_Beat_Prisoners_WorkType_Break_Resistance</workType>
+    <verb>break</verb>
+    <gerund>breaking</gerund>
+    <priorityInType>110</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

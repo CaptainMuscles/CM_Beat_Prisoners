@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecordDef>
+    <defName>CM_Beat_Prisoners_Record_Prisoners_Beaten</defName>
+    <label>prisoners beaten</label>
+    <description>The number of beatings I have given to prisoners.</description>
+    <type>Int</type>
+  </RecordDef>
+
+</Defs>

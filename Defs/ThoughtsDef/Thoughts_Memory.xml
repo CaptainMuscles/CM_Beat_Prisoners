@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--======== Other beaten ========-->
+
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Prisoner_Beaten</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <nullifyingTraits>
+	  <li>Kind</li>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>prisoner beaten</label>
+        <description>A prisoner was given a beating. This is barbaric.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Prisoner_Beaten_Mild</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Kind</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>prisoner beaten</label>
+        <description>A prisoner was given a beating. It's disgusting.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Prisoner_Beaten_Spicy</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>prisoner beaten</label>
+        <description>A prisoner was given a beating. They're going to submit, one way or another.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--======== Self beaten ========-->
+
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Self_Beaten</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <nullifyingTraits>
+	  <li>Wimp</li>
+	  <li>Tough</li>
+	  <li>Masochist</li>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>beaten</label>
+        <description>I received a beating. These people really mean business.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Self_Beaten_Mild</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Wimp</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>beaten</label>
+        <description>I received a beating. I don't know how much of this I can take...</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Self_Beaten_Spicy</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Psychopath</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>beaten</label>
+        <description>I received a beating. I could really care less.</description>
+        <baseMoodEffect>-0.001</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Self_Beaten_Kinky</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>beaten</label>
+        <description>I received a beating. I can't wait for the next one!.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--======== Gave Beating ========-->
+ 
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Give_Beating_Mild</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+	  <li>Kind</li>
+      <li>Wimp</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>gave beating</label>
+        <description>I gave a prisoner a beating. I wish I didn't have to do this.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Give_Beating_Spicy</defName>
+	<stackLimit>5</stackLimit>
+    <durationDays>6</durationDays>
+    <requiredTraits>
+      <li>Bloodlust</li>
+      <li>Brawler</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>gave beating</label>
+        <description>I gave a prisoner a beating. I love my job!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

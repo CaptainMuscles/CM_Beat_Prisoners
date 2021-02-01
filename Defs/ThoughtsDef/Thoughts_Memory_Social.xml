@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Special -->
+  
+  <ThoughtDef>
+    <defName>CM_Beat_Prisoners_Thought_Enmity_Built</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>20</durationDays>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>50</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>enmity built</label>
+        <baseOpinionOffset>-2</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>
