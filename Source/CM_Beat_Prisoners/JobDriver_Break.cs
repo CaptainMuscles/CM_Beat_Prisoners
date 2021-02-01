@@ -24,9 +24,14 @@ namespace CM_Beat_Prisoners
             Toil beatingComplete = Toils_General.Label();
             Toil beatingCancelled = Toils_General.Label();
 
+            yield return Toils_General.Do(delegate
+            {
+                Messages.Message("CM_Beat_Prisoners_Break_Attempt".Translate(pawn, Victim), Victim, MessageTypeDefOf.NeutralEvent);
+            });
+
             yield return beatingContinues;
 
-            yield return Toils_Interpersonal.GotoPrisoner(pawn, Victim, Victim.guest.interactionMode);
+            yield return GotoPrisoner(pawn, Victim);
             yield return Toils_Interpersonal.GotoInteractablePosition(TargetIndex.A);
             yield return ThreatenPrisoner(pawn, Victim);
 
@@ -40,7 +45,7 @@ namespace CM_Beat_Prisoners
             yield return Toils_Misc.ThrowColonistAttackingMote(TargetIndex.A);
             yield return Toils_Combat.FollowAndMeleeAttack(TargetIndex.A, delegate
             {
-                if (Victim == null || !Victim.Spawned || Victim.InMentalState || !Victim.IsPrisonerOfColony || !Victim.guest.PrisonerIsSecure)
+                if (Victim == null || !Victim.Spawned || Victim.InMentalState || !Victim.IsPrisonerOfColony || !Victim.guest.PrisonerIsSecure || Victim.guest.interactionMode != PrisonerInteractionModeDefOf.ReduceResistance)
                     pawn.jobs.curDriver.JumpToToil(beatingCancelled);
 
                 if (Victim.Downed)
@@ -92,6 +97,29 @@ namespace CM_Beat_Prisoners
             });   
         }
 
+        private Toil GotoPrisoner(Pawn pawn, Pawn talkee)
+        {
+            Toil toil = new Toil();
+            toil.initAction = delegate
+            {
+                pawn.pather.StartPath(talkee, PathEndMode.Touch);
+            };
+            toil.AddFailCondition(delegate
+            {
+                if (talkee.DestroyedOrNull())
+                {
+                    return true;
+                }
+                if (!talkee.IsPrisonerOfColony)
+                {
+                    return true;
+                }
+                return (talkee.guest == null) ? true : false;
+            });
+            toil.socialMode = RandomSocialMode.Off;
+            toil.defaultCompleteMode = ToilCompleteMode.PatherArrival;
+            return toil;
+        }
 
         private Toil ThreatenPrisoner(Pawn pawn, Pawn talkee)
         {
