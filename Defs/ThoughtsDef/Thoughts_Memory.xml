@@ -42,8 +42,8 @@
 	<stackLimit>5</stackLimit>
     <durationDays>6</durationDays>
     <requiredTraits>
-      <li>Psychopath</li>
       <li>Bloodlust</li>
+	  <!--<li>Psychopath</li>-->
     </requiredTraits>
     <stages>
       <li>
@@ -64,7 +64,7 @@
 	  <li>Wimp</li>
 	  <li>Tough</li>
 	  <li>Masochist</li>
-      <li>Psychopath</li>
+      <!--<li>Psychopath</li>-->
     </nullifyingTraits>
     <stages>
       <li>
@@ -87,22 +87,6 @@
         <label>beaten</label>
         <description>I received a beating. I don't know how much of this I can take...</description>
         <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>CM_Beat_Prisoners_Thought_Self_Beaten_Spicy</defName>
-	<stackLimit>5</stackLimit>
-    <durationDays>6</durationDays>
-    <requiredTraits>
-      <li>Psychopath</li>
-    </requiredTraits>
-    <stages>
-      <li>
-        <label>beaten</label>
-        <description>I received a beating. I could really care less.</description>
-        <baseMoodEffect>-0.001</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

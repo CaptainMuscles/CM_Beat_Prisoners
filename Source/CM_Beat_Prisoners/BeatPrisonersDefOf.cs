@@ -23,10 +23,8 @@ namespace CM_Beat_Prisoners
 
         public static ThoughtDef CM_Beat_Prisoners_Thought_Self_Beaten;
         public static ThoughtDef CM_Beat_Prisoners_Thought_Self_Beaten_Mild;
-        public static ThoughtDef CM_Beat_Prisoners_Thought_Self_Beaten_Spicy;
         public static ThoughtDef CM_Beat_Prisoners_Thought_Self_Beaten_Kinky;
 
-        //public static ThoughtDef CM_Beat_Prisoners_Thought_Give_Beating;
         public static ThoughtDef CM_Beat_Prisoners_Thought_Give_Beating_Mild;
         public static ThoughtDef CM_Beat_Prisoners_Thought_Give_Beating_Spicy;
 

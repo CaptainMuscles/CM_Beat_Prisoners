@@ -23,7 +23,6 @@ namespace CM_Beat_Prisoners
 
             List<ThoughtDef> selfBeatenThoughts = new List<ThoughtDef> {  BeatPrisonersDefOf.CM_Beat_Prisoners_Thought_Self_Beaten,
                                                                           BeatPrisonersDefOf.CM_Beat_Prisoners_Thought_Self_Beaten_Mild,
-                                                                          BeatPrisonersDefOf.CM_Beat_Prisoners_Thought_Self_Beaten_Spicy,
                                                                           BeatPrisonersDefOf.CM_Beat_Prisoners_Thought_Self_Beaten_Kinky };
 
             List<ThoughtDef> gaveBeatingThoughts = new List<ThoughtDef> { BeatPrisonersDefOf.CM_Beat_Prisoners_Thought_Give_Beating_Mild,
