@@ -1,4 +1,4 @@
-## [1.0.0] - 2021-02-01
+## [1.0.1] - 2021-02-01
 
 ### Changed
 - Psychopath gets no thought, instead of positive thought, when others beaten.
