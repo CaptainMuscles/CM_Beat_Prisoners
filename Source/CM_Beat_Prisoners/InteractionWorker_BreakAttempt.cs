@@ -42,8 +42,6 @@ namespace CM_Beat_Prisoners
             if (beating == null)
                 return;
 
-            float negotiationAbilityFactor = initiator.GetStatValue(StatDefOf.NegotiationAbility) * negotiationFactor;
-
             float currentPainLevel = recipient.health.hediffSet.PainTotal;
             float painInflicted = beating.GetAndResetPainInflicted(currentPainLevel);
             float painFactor = ResistanceImpactFactorCurve_Pain.Evaluate(painInflicted);
@@ -52,10 +50,8 @@ namespace CM_Beat_Prisoners
             float resistanceReduction = 1f;
 
             Logger.StartMessage(this, "{0} beat {1}, base resistance reduction  = {2}", initiator, recipient, resistanceReduction);
-            Logger.AddToMessage("    negotiation ability factor: {0}", negotiationAbilityFactor);
             Logger.AddToMessage("    pain inflicted: {0}, pain factor: {1}", painInflicted, painFactor);
 
-            resistanceReduction *= negotiationAbilityFactor;
             resistanceReduction *= painFactor;
 
             resistanceReduction = FactorInInitiatorTraits(initiator, resistanceReduction);
