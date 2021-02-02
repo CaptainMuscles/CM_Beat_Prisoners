@@ -7,6 +7,9 @@
     <defName>CM_Beat_Prisoners_Thought_Enmity_Built</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
     <durationDays>20</durationDays>
+	<nullifyingTraits>
+	  <li>Masochist</li>
+    </nullifyingTraits>
     <stackedEffectMultiplier>1</stackedEffectMultiplier>
     <stackLimit>300</stackLimit>
     <stackLimitForSameOtherPawn>50</stackLimitForSameOtherPawn>
