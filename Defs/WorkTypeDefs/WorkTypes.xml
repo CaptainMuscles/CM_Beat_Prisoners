@@ -12,11 +12,9 @@
     <requireCapableColonist>true</requireCapableColonist>
     <relevantSkills>
 	  <li>Melee</li>
-      <li>Social</li>
     </relevantSkills>
     <workTags>
 	  <li>Violent</li>
-      <li>Social</li>
       <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
