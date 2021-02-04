@@ -8,7 +8,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace CM_Beat_Prisoners
+namespace CM_Beat_Prisoners.Patches
 {
     [StaticConstructorOnStartup]
     public static class JobDriver_Patches
