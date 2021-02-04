@@ -1,3 +1,9 @@
+## [1.0.3] - 2021-02-04
+
+### Changed
+- Break work type is disabled by default for all colonists until enabled by player
+
+
 ## [1.0.2] - 2021-02-02
 
 ### Changed
