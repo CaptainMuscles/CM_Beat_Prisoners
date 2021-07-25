@@ -10,7 +10,7 @@ namespace CM_Beat_Prisoners
     {
         public override Job JobOnThing(Pawn pawn, Thing target, bool forced = false)
         {
-            if (!ShouldTakeCareOfPrisoner_NewTemp(pawn, target, forced))
+            if (!ShouldTakeCareOfPrisoner(pawn, target, forced))
             {
                 return null;
             }
